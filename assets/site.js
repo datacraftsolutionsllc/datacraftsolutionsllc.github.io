@@ -171,7 +171,9 @@
     /* ---------- pages ---------- */
     const P = {};
     P.home = () => {
-      const slides = (H.slides || []).filter((s) => s.line1 || s.photo);
+      // A slide waits until it has a photo, so the hero never shows an empty frame
+      const all = (H.slides || []).filter((s) => s.line1 || s.photo);
+      const slides = all.filter((s, i) => fix(s.photo) || (i === 0 && H.hero_video)).length ? all.filter((s, i) => fix(s.photo) || (i === 0 && H.hero_video)) : all;
       const vids = (D.videos || []).filter((v) => v.show_on_home).slice(0, 3);
       const featured = [...av.filter((a) => !a.sold).slice(0, 2).map((a, i) => availCard(a, i)),
         ...(D.firearms || []).slice(0, 2).map((f, i) => card({ ...f, detail: f.details, href: "firearms.html", flag: `<span class="badge">${esc(f.brand === "Korth" ? "Korth" : "Nighthawk")}</span>`, cta: "View" }, i + 2))].join("");
@@ -309,7 +311,7 @@ ${newsletter}`;
 
     P.shop = () => {
       const I = "images/uploads/";
-      const cats = [["Custom Guns", "/catalog/custom-guns", I + "colt-38-super-after.jpg"], ["Handguns", "/catalog/handguns", I + "cat-handguns.jpg"], ["Rifles", "/catalog/rifles", I + "cat-rifles.jpg"], ["Shotguns", "/catalog/shotguns", I + "cat-shotguns.jpg"], ["Ammo", "/catalog/ammo", I + "cat-ammo.jpg"], ["Accessories", "/catalog/accessories", I + "cat-accessories.jpg"]];
+      const cats = [["Custom Guns", "/catalog/custom-guns", H.tile_custom || ""], ["Handguns", "/catalog/handguns", I + "cat-handguns.jpg"], ["Rifles", "/catalog/rifles", I + "cat-rifles.jpg"], ["Shotguns", "/catalog/shotguns", I + "cat-shotguns.jpg"], ["Ammo", "/catalog/ammo", I + "cat-ammo.jpg"], ["Accessories", "/catalog/accessories", I + "cat-accessories.jpg"]];
       return banner("Online Store", "Thousands of firearms, optics and parts with live stock and pricing from our distributor. Firearms ship to your FFL. Everything else ships to your door.", "images/uploads/cat-ammo.jpg", ["Shop"], btn("Browse Categories", "#cats", "light")) + `
 <section class="sec"><div class="wrap">
   <div class="head"><h2 class="title rv">Shop by Category</h2></div>

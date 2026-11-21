@@ -339,7 +339,7 @@ ${KIT ? `<section class="band">${note("Collection", " for Nighthawk Custom and K
 
     P.shop = () => {
       const I = "images/uploads/";
-      const cats = [["Custom Guns", "/catalog/custom-guns", I + "colt-38-super-after.jpg"], ["Handguns", "/catalog/handguns", I + "cat-handguns.jpg"], ["Rifles", "/catalog/rifles", I + "cat-rifles.jpg"], ["Shotguns", "/catalog/shotguns", I + "cat-shotguns.jpg"], ["Ammo", "/catalog/ammo", I + "cat-ammo.jpg"], ["Accessories", "/catalog/accessories", I + "cat-accessories.jpg"]];
+      const cats = [["Custom Guns", "/catalog/custom-guns", H.tile_custom || ""], ["Handguns", "/catalog/handguns", I + "cat-handguns.jpg"], ["Rifles", "/catalog/rifles", I + "cat-rifles.jpg"], ["Shotguns", "/catalog/shotguns", I + "cat-shotguns.jpg"], ["Ammo", "/catalog/ammo", I + "cat-ammo.jpg"], ["Accessories", "/catalog/accessories", I + "cat-accessories.jpg"]];
       return `<div class="sheet">${phead({ kick: "The General Store", title: "Online Store", deck: "Thousands of firearms, optics and parts with live stock and pricing from our distributor. Firearms ship to your FFL. Everything else ships to your door.", crumbs: ["Store"], extra: stamp("Browse Departments", "#cats") + stamp("Tombstone Gear", "gear.html", "line") })}
 <section class="band" id="cats"><div class="band-h"><p class="kick">Departments</p><h2>Shop by Category</h2></div>
   <div class="depts">${cats.map(([t, p, ph]) => `<a class="dept" href="${esc(sl(p))}">${img(ph, t + " category photo", "ink")}<span class="d-name">${t}</span><span class="g-cta">Browse${ARR}</span></a>`).join("")}</div></section>

@@ -1,5 +1,5 @@
 {
-  "banner_photo": "/images/uploads/colt-38-super-after.jpg",
+  "banner_photo": "",
   "platforms": [
     {
       "name": "Custom 1911",
@@ -8,7 +8,7 @@
       "capacity": "7 to 10 rounds",
       "best_for": "Carry, collecting, heirloom builds",
       "starting_price": "$3,500",
-      "photo": "/images/uploads/colt-38-super-after.jpg"
+      "photo": ""
     },
     {
       "name": "Custom 2011",

@@ -8,7 +8,7 @@
       "text": "One pistol, one gunsmith, start to finish. Built to your spec and test fired before it ships.",
       "button": "Start a Build",
       "link": "custom-shop.html",
-      "photo": "/images/uploads/colt-38-super-after.jpg"
+      "photo": ""
     },
     {
       "kicker": "Tombstone, Arizona. Circa 1956",
@@ -35,13 +35,13 @@
       "text": "Trigger jobs, action work, optic cuts and refinishing at posted prices. No surprises.",
       "button": "See Prices",
       "link": "gunsmithing.html",
-      "photo": "/images/uploads/colt-38-super-before.jpg"
+      "photo": ""
     }
   ],
-  "tile_custom": "/images/uploads/colt-38-super-after.jpg",
+  "tile_custom": "",
   "tile_nighthawk": "/images/uploads/nighthawk-korth-44-right.jpg",
   "tile_korth": "/images/uploads/korth-left.jpg",
-  "tile_gunsmithing": "/images/uploads/colt-38-super-before.jpg",
+  "tile_gunsmithing": "",
   "brand_heading": "Gen 3 at the Bench",
   "brand_text": "Every Tombstone pistol is built start to finish by Anthony Fish in Roswell, New Mexico. No assembly line and no hand-offs. Each gun is fit, finished and test fired at one bench.",
   "brand_text_2": "We fine tune the guns you already own, build custom 1911 and double stack 1911 pistols, and carry Nighthawk Custom and Korth.",
