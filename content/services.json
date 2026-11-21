@@ -1,0 +1,101 @@
+{
+  "banner_photo": "/images/uploads/colt-38-super-before.jpg",
+  "items": [
+    {
+      "category": "Triggers",
+      "name": "1911 trigger job",
+      "details": "Stone sear and hammer, set pull weight, safety check",
+      "platform": "1911",
+      "turnaround": "1 to 2 weeks",
+      "price": "$150"
+    },
+    {
+      "category": "Triggers",
+      "name": "2011 trigger job",
+      "details": "Includes disconnect tune",
+      "platform": "2011",
+      "turnaround": "1 to 2 weeks",
+      "price": "$175"
+    },
+    {
+      "category": "Triggers",
+      "name": "Trigger install",
+      "details": "Customer supplied trigger, fit and tune",
+      "platform": "1911 / 2011",
+      "turnaround": "1 week",
+      "price": "$75"
+    },
+    {
+      "category": "Action Work",
+      "name": "Revolver action job",
+      "details": "Polish internals, springs, timing check",
+      "platform": "Revolver",
+      "turnaround": "2 to 3 weeks",
+      "price": "$175"
+    },
+    {
+      "category": "Action Work",
+      "name": "Reliability package",
+      "details": "Feed ramp polish, extractor tune, magazine check",
+      "platform": "1911 / 2011",
+      "turnaround": "1 to 2 weeks",
+      "price": "$150"
+    },
+    {
+      "category": "Action Work",
+      "name": "Match barrel fit",
+      "details": "Hand fit match barrel to slide and frame",
+      "platform": "1911 / 2011",
+      "turnaround": "2 to 3 weeks",
+      "price": "$200"
+    },
+    {
+      "category": "Sights and Optics",
+      "name": "IOS retrofit",
+      "details": "Novak cut slides. Plate extra.",
+      "platform": "1911 / 2011",
+      "turnaround": "4 to 6 weeks",
+      "price": "$350"
+    },
+    {
+      "category": "Sights and Optics",
+      "name": "Optic cut, direct mill",
+      "details": "One footprint",
+      "platform": "Most pistols",
+      "turnaround": "2 to 3 weeks",
+      "price": "$175"
+    },
+    {
+      "category": "Sights and Optics",
+      "name": "Night sight install",
+      "details": "Dovetail fit. Sights extra.",
+      "platform": "All",
+      "turnaround": "3 to 5 days",
+      "price": "$50"
+    },
+    {
+      "category": "Refinish",
+      "name": "Hot blue",
+      "details": "Polish and blue, steel only",
+      "platform": "All steel",
+      "turnaround": "4 to 6 weeks",
+      "price": "$300"
+    },
+    {
+      "category": "Refinish",
+      "name": "Cerakote",
+      "details": "Single color. Two tone add $50.",
+      "platform": "All",
+      "turnaround": "2 to 3 weeks",
+      "price": "$200"
+    },
+    {
+      "category": "General",
+      "name": "Detail strip and inspect",
+      "details": "Full clean, lube, function check",
+      "platform": "All",
+      "turnaround": "3 to 5 days",
+      "price": "$65"
+    }
+  ]
+}

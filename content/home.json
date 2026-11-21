@@ -1,0 +1,55 @@
+{
+  "hero_video": "",
+  "slides": [
+    {
+      "kicker": "The Tombstone Custom",
+      "line1": "Hand Built",
+      "line2": "1911s",
+      "text": "One pistol, one gunsmith, start to finish. Built to your spec and test fired before it ships.",
+      "button": "Start a Build",
+      "link": "custom-shop.html",
+      "photo": "/images/uploads/colt-38-super-after.jpg"
+    },
+    {
+      "kicker": "Tombstone, Arizona. Circa 1956",
+      "line1": "Third",
+      "line2": "Generation",
+      "text": "It started with Judge Harold Fish's shop on Allen Street in Tombstone. His grandson Anthony reestablished the name in Roswell in 2023.",
+      "button": "Our Story",
+      "link": "about.html",
+      "photo": "/images/uploads/tombstone-truck-1958.jpg"
+    },
+    {
+      "kicker": "Authorized Dealer",
+      "line1": "Nighthawk",
+      "line2": "and Korth",
+      "text": "Hand built Nighthawk Custom pistols and Korth revolvers, in stock and on order.",
+      "button": "See Firearms",
+      "link": "firearms.html",
+      "photo": "/images/uploads/nighthawk-korth-44-right.jpg"
+    },
+    {
+      "kicker": "Gunsmithing",
+      "line1": "Flat Rate",
+      "line2": "Shop Work",
+      "text": "Trigger jobs, action work, optic cuts and refinishing at posted prices. No surprises.",
+      "button": "See Prices",
+      "link": "gunsmithing.html",
+      "photo": "/images/uploads/colt-38-super-before.jpg"
+    }
+  ],
+  "tile_custom": "/images/uploads/colt-38-super-after.jpg",
+  "tile_nighthawk": "/images/uploads/nighthawk-korth-44-right.jpg",
+  "tile_korth": "/images/uploads/korth-left.jpg",
+  "tile_gunsmithing": "/images/uploads/colt-38-super-before.jpg",
+  "brand_heading": "Gen 3 at the Bench",
+  "brand_text": "Every Tombstone pistol is built start to finish by Anthony Fish in Roswell, New Mexico. No assembly line and no hand-offs. Each gun is fit, finished and test fired at one bench.",
+  "brand_text_2": "We fine tune the guns you already own, build custom 1911 and double stack 1911 pistols, and carry Nighthawk Custom and Korth.",
+  "brand_photo": "/images/uploads/korth-with-logo.jpg",
+  "video_band_photo": "",
+  "heritage_photo": "/images/uploads/tombstone-truck-1958.jpg",
+  "heritage_kicker": "",
+  "heritage_heading": "Allen Street, 1956",
+  "heritage_text": "Around 1956 Judge Harold Fish ran a small gunsmith shop and gun store at 402 Allen Street in Tombstone, Arizona. His grandson Anthony, Gen 3, apprenticed under Ray Melendez of Alien Arms and reestablished The Tombstone Gunsmith in Roswell, New Mexico, in 2023.",
+  "heritage_photo_2": "/images/uploads/original-tombstone-store.jpg"
+}

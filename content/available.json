@@ -1,0 +1,138 @@
+[
+  {
+    "id": "marshal",
+    "name": "Marshal Government 1911",
+    "price": "$4,250",
+    "sold": false,
+    "description": "5 inch Government in .45 ACP. Hot blue, hand checkered walnut, 25 LPI front strap, tuned 4 lb trigger.",
+    "photos": [],
+    "specs": [
+      {
+        "label": "Caliber",
+        "value": ".45 ACP"
+      },
+      {
+        "label": "Barrel",
+        "value": "5 in. match, bushing"
+      },
+      {
+        "label": "Finish",
+        "value": "Hot blue"
+      },
+      {
+        "label": "Grips",
+        "value": "Walnut"
+      },
+      {
+        "label": "Sights",
+        "value": "Tritium night sights"
+      },
+      {
+        "label": "Trigger",
+        "value": "4 lb flat"
+      }
+    ]
+  },
+  {
+    "id": "deputy",
+    "name": "Deputy Commander IOS",
+    "price": "$4,600",
+    "sold": false,
+    "description": "4.25 inch Commander in 9mm with the IOS optic system. Stainless frame, black slide.",
+    "photos": [],
+    "specs": [
+      {
+        "label": "Caliber",
+        "value": "9mm"
+      },
+      {
+        "label": "Barrel",
+        "value": "4.25 in. bull"
+      },
+      {
+        "label": "Finish",
+        "value": "Two tone"
+      },
+      {
+        "label": "Grips",
+        "value": "G10"
+      },
+      {
+        "label": "Sights",
+        "value": "IOS with RMR plate"
+      },
+      {
+        "label": "Trigger",
+        "value": "3.75 lb curved"
+      }
+    ]
+  },
+  {
+    "id": "race",
+    "name": "2011 Race Gun",
+    "price": "$5,200",
+    "sold": false,
+    "description": "5 inch double stack 9mm set up for USPSA Limited and Open.",
+    "photos": [],
+    "specs": [
+      {
+        "label": "Caliber",
+        "value": "9mm"
+      },
+      {
+        "label": "Barrel",
+        "value": "5 in. ported"
+      },
+      {
+        "label": "Finish",
+        "value": "DLC"
+      },
+      {
+        "label": "Grip",
+        "value": "Steel grip module"
+      },
+      {
+        "label": "Sights",
+        "value": "Fiber front"
+      },
+      {
+        "label": "Trigger",
+        "value": "2.5 lb"
+      }
+    ]
+  },
+  {
+    "id": "officer",
+    "name": "Officer Carry 1911",
+    "price": "$3,900",
+    "sold": false,
+    "description": "3.6 inch Officer frame in 9mm with ivory polymer grips and a full carry melt.",
+    "photos": [],
+    "specs": [
+      {
+        "label": "Caliber",
+        "value": "9mm"
+      },
+      {
+        "label": "Barrel",
+        "value": "3.6 in. bull"
+      },
+      {
+        "label": "Finish",
+        "value": "Stainless"
+      },
+      {
+        "label": "Grips",
+        "value": "Ivory polymer"
+      },
+      {
+        "label": "Sights",
+        "value": "Tritium night sights"
+      },
+      {
+        "label": "Trigger",
+        "value": "4.5 lb"
+      }
+    ]
+  }
+]

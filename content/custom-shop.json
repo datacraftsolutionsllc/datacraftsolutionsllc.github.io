@@ -1,0 +1,111 @@
+{
+  "banner_photo": "/images/uploads/colt-38-super-after.jpg",
+  "platforms": [
+    {
+      "name": "Custom 1911",
+      "frames": "Government, Commander, Officer",
+      "calibers": ".45 ACP, 9mm, 10mm, .38 Super",
+      "capacity": "7 to 10 rounds",
+      "best_for": "Carry, collecting, heirloom builds",
+      "starting_price": "$3,500",
+      "photo": "/images/uploads/colt-38-super-after.jpg"
+    },
+    {
+      "name": "Custom 2011",
+      "frames": "Full size, Commander length",
+      "calibers": "9mm, .40 S&W, 10mm",
+      "capacity": "17 to 21 rounds",
+      "best_for": "Competition, duty, high capacity carry",
+      "starting_price": "$4,500",
+      "photo": ""
+    }
+  ],
+  "options": [
+    {
+      "group": "Slide",
+      "option": "Top treatment",
+      "choices": "Flat top serrated, rib, ball cut",
+      "price": "$150"
+    },
+    {
+      "group": "Slide",
+      "option": "Cocking serrations",
+      "choices": "Standard, fish scale, front and rear",
+      "price": "$125"
+    },
+    {
+      "group": "Slide",
+      "option": "Lightening cuts",
+      "choices": "Window, ball end, custom pattern",
+      "price": "$250"
+    },
+    {
+      "group": "Frame",
+      "option": "Front strap",
+      "choices": "25 or 30 LPI checkering, scales",
+      "price": "$225"
+    },
+    {
+      "group": "Frame",
+      "option": "Mag well",
+      "choices": "Blended, flared, competition",
+      "price": "$175"
+    },
+    {
+      "group": "Frame",
+      "option": "Grips",
+      "choices": "Walnut, G10, ivory polymer, stag",
+      "price": "From $80"
+    },
+    {
+      "group": "Barrel and Trigger",
+      "option": "Barrel",
+      "choices": "Match bushing, bull, crowned, ported",
+      "price": "From $250"
+    },
+    {
+      "group": "Barrel and Trigger",
+      "option": "Trigger",
+      "choices": "Flat or curved, set to your pull weight",
+      "price": "$150"
+    },
+    {
+      "group": "Finish and Sights",
+      "option": "Finish",
+      "choices": "Hot blue, DLC, Cerakote, nitride, stainless, two tone",
+      "price": "From $250"
+    },
+    {
+      "group": "Finish and Sights",
+      "option": "Sights",
+      "choices": "Night sights, fiber optic, IOS optic system",
+      "price": "From $150"
+    },
+    {
+      "group": "Finish and Sights",
+      "option": "Engraving",
+      "choices": "Laser or hand engraved",
+      "price": "Quote"
+    }
+  ],
+  "ios_text": "The Nighthawk Interchangeable Optic System mounts a steel plate in a dovetail at the rear of the slide. Swap the iron sight plate for an optic plate in minutes and hold zero on both. We install it on new builds and retrofit existing 1911 and 2011 slides with a Novak style rear sight cut.",
+  "ios_photo": "",
+  "ios_prices": [
+    {
+      "item": "IOS on a new build",
+      "price": "$350"
+    },
+    {
+      "item": "IOS retrofit, existing slide",
+      "price": "$350"
+    },
+    {
+      "item": "Optic plate",
+      "price": "$150"
+    },
+    {
+      "item": "Plate footprints",
+      "price": "RMR, RMSc, 509T and more"
+    }
+  ]
+}

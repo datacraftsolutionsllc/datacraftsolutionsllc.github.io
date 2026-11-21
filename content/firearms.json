@@ -1,0 +1,50 @@
+[
+  {
+    "brand": "Korth",
+    "name": "Nighthawk Korth Revolver",
+    "details": ".44 Rem Mag, ported barrel, walnut grips",
+    "price": "Call for price",
+    "status": "In stock",
+    "photo": "/images/uploads/nighthawk-korth-44-right.jpg"
+  },
+  {
+    "brand": "Korth",
+    "name": "Korth Revolver",
+    "details": "Ported barrel, walnut target grips, factory case",
+    "price": "Call for price",
+    "status": "In stock",
+    "photo": "/images/uploads/korth-in-box.jpg"
+  },
+  {
+    "brand": "Nighthawk Custom",
+    "name": "Nighthawk Government",
+    "details": ".45 ACP, 5 in.",
+    "price": "Call for price",
+    "status": "In stock",
+    "photo": ""
+  },
+  {
+    "brand": "Nighthawk Custom",
+    "name": "Nighthawk Commander",
+    "details": "9mm, 4.25 in.",
+    "price": "Call for price",
+    "status": "On order",
+    "photo": ""
+  },
+  {
+    "brand": "Nighthawk Custom",
+    "name": "Nighthawk 2011",
+    "details": "9mm, 5 in.",
+    "price": "Call for price",
+    "status": "In stock",
+    "photo": ""
+  },
+  {
+    "brand": "Nighthawk Custom",
+    "name": "Nighthawk IOS Carry",
+    "details": "9mm, 4.25 in., IOS",
+    "price": "Call for price",
+    "status": "In stock",
+    "photo": ""
+  }
+]

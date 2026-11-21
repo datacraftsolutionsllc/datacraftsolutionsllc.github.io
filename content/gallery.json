@@ -1,0 +1,44 @@
+[
+  {
+    "type": "1911",
+    "name": "Colt Competition .38 Super",
+    "notes": "Tuned, reworked and fitted with Wilson grips",
+    "photo": "/images/uploads/colt-38-super-after.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "Revolver",
+    "name": "Nighthawk Korth .44 Mag",
+    "notes": "Ported barrel, walnut grips",
+    "photo": "/images/uploads/nighthawk-korth-44-right.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "Revolver",
+    "name": "Korth Revolver",
+    "notes": "With the Tombstone badge",
+    "photo": "/images/uploads/korth-with-logo.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "Revolver",
+    "name": "Korth Revolver",
+    "notes": "Left side",
+    "photo": "/images/uploads/korth-left.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "1911",
+    "name": "Colt Competition .38 Super",
+    "notes": "As it came from the factory",
+    "photo": "/images/uploads/colt-38-super-before.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "Revolver",
+    "name": "Korth in the Case",
+    "notes": "Factory case and accessories",
+    "photo": "/images/uploads/korth-in-box.jpg",
+    "shape": "wide"
+  }
+]

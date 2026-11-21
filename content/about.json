@@ -1,0 +1,49 @@
+{
+  "banner_photo": "/images/uploads/tombstone-truck-1958.jpg",
+  "headline": "The Tombstone Story",
+  "intro": "Three generations. Tombstone, Arizona to Roswell, New Mexico.",
+  "story": "The Tombstone Gunsmith goes back to around 1956, when Judge Harold Fish ran a small gunsmith shop and gun store at 402 Allen Street in Tombstone, Arizona. Harold later worked out of 1212 Toughnut Street and served the town as its magistrate. His sons James and Bill never smithed for a living, but both were gun men their whole lives.\n\nAnthony Fish got a Stevens single shot .22 the year he was born and a Ruger Bearcat in 1977. He spent his childhood summers in Tombstone learning to reload and chasing jackrabbits.\n\nIn 2022 his wife gave him a Colt Competition Series 1911 in .38 Super. It would not run. A friend sent him to Ray Melendez of Alien Arms, then in Dexter, New Mexico, who deburred, polished and tuned it and swapped in better parts until it ran and shot true. Anthony went on to apprentice under Ray. His family started calling him Gen 3 and handed him the Tombstone Gunsmith name.\n\nIn 2023 he reestablished The Tombstone Gunsmith, LLC in Roswell, New Mexico. Today the shop fine tunes the guns you already own and builds custom 1911 and double stack 1911 pistols. It runs on faith, family and the same name Harold painted on his truck.",
+  "story_photo": "/images/uploads/original-tombstone-store.jpg",
+  "before_after": [
+    {
+      "title": "The Colt That Started It",
+      "text": "The Colt Competition .38 Super Anthony's wife gave him in 2022. It would not run until Ray Melendez of Alien Arms went through it. Before on the left, after on the right.",
+      "before_photo": "/images/uploads/colt-38-super-before.jpg",
+      "after_photo": "/images/uploads/colt-38-super-after.jpg"
+    }
+  ],
+  "thanks": [
+    {
+      "name": "Nighthawk Custom",
+      "role": "Dealer Partner",
+      "link": "https://nighthawkcustom.com/",
+      "text": "Hand built 1911 and 2011 pistols. Authorized dealer."
+    },
+    {
+      "name": "Tyler Gun Works",
+      "role": "Industry Partner",
+      "link": "https://tylergunworks.com/",
+      "text": "Custom pistol work and parts."
+    },
+    {
+      "name": "Alien Arms",
+      "role": "Mentor",
+      "link": "",
+      "text": "Ray Melendez. The gunsmith Anthony apprenticed under, and the reason the bench exists."
+    }
+  ],
+  "heritage": [
+    {
+      "photo": "/images/uploads/tombstone-truck-1958.jpg",
+      "caption": "September 1958. The shop truck, 402 Allen St., Tombstone, Arizona."
+    },
+    {
+      "photo": "/images/uploads/original-tombstone-store.jpg",
+      "caption": "Judge Harold Fish inside the original Tombstone Gunsmith."
+    },
+    {
+      "photo": "/images/uploads/harold-fish-collection.jpg",
+      "caption": "Harold J. Fish's collection. Revolvers, badges, cuffs and his magistrate nameplate."
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Two Designs | The Tombstone Gunsmith</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="images/favicon.png">
+<style>
+:root{--bg:#f4f2ee;--ink:#151515;--mute:#5d5a55;--rule:#d8d4cc;--card:#fff;--acc:#232655}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+.wrap{max-width:1180px;margin:0 auto;padding:44px 24px 60px}
+h1{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:0 0 10px;letter-spacing:-.01em}
+.intro{color:var(--mute);max-width:62ch;margin:0 0 34px;font-size:17px}
+.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.card{background:var(--card);border:1px solid var(--rule);display:flex;flex-direction:column}
+.shot{display:block;aspect-ratio:1366/940;overflow:hidden;border-bottom:1px solid var(--rule);background:#ddd}
+.shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .5s}
+.shot:hover img{transform:scale(1.02)}
+.body{padding:22px 24px 26px;display:flex;flex-direction:column;gap:12px;flex:1}
+.tag{font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--mute)}
+h2{margin:0;font-size:26px;line-height:1.15}
+.body p{margin:0;color:#33312d}
+.open{align-self:flex-start;margin-top:4px;background:var(--ink);color:#fff;text-decoration:none;font-weight:600;padding:11px 18px}
+.open:hover{background:var(--acc)}
+.pages{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;margin-top:auto;padding-top:14px;border-top:1px solid var(--rule)}
+.pages a{color:var(--acc)}
+.note{margin-top:30px;padding:18px 22px;border-left:3px solid var(--acc);background:#fff;color:#33312d;max-width:80ch}
+@media (max-width:820px){.grid{grid-template-columns:1fr}.wrap{padding:30px 16px 44px}}
+</style>
+</head>
+<body>
+<main class="wrap">
+  <h1>Two Designs for The Tombstone Gunsmith</h1>
+  <p class="intro">Both versions are full sites with every page built. Click into either one and look around. The tab at the bottom left of every page flips to the same page in the other design.</p>
+  <div class="grid">
+    <section class="card">
+      <a class="shot" href="index.html"><img src="assets/present/current.jpg" alt="Home page of the current design" width="1366" height="940"></a>
+      <div class="body">
+        <span class="tag">Version A</span>
+        <h2>The Current Design</h2>
+        <p>Black with an oxblood red accent. A rotating photo slider up top, then category tiles, featured guns and the shop story. It follows the layout of the big premium gun stores.</p>
+        <a class="open" href="index.html">Open Version A</a>
+        <div class="pages"><a href="custom-shop.html">Custom Shop</a><a href="gunsmithing.html">Gunsmithing</a><a href="firearms.html">Firearms</a><a href="shop.html">Store</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      </div>
+    </section>
+    <section class="card">
+      <a class="shot" href="epitaph/index.html"><img src="assets/present/epitaph.jpg" alt="Home page of the Epitaph design" width="1366" height="940"></a>
+      <div class="body">
+        <span class="tag">Version B</span>
+        <h2>The Epitaph</h2>
+        <p>Set like the front page of the Tombstone Epitaph, the town paper since 1880. Newsprint, ink and the navy from the logo. The custom shop leads the front page, gun photos print in ink until you point at them, and the 1958 shop truck photo develops as you scroll to it.</p>
+        <a class="open" href="epitaph/index.html">Open Version B</a>
+        <div class="pages"><a href="epitaph/custom-shop.html">Custom Shop</a><a href="epitaph/gunsmithing.html">Gunsmithing</a><a href="epitaph/firearms.html">Firearms</a><a href="epitaph/shop.html">Store</a><a href="epitaph/about.html">Our Story</a><a href="epitaph/contact.html">Contact</a></div>
+      </div>
+    </section>
+  </div>
+  <p class="note">Both designs use the same words, photos and prices, and both plug into the same AmmoReady store. Prices are placeholders until the real ones come in. Whichever design gets picked is the one that goes live.</p>
+</main>
+</body>
+</html>
