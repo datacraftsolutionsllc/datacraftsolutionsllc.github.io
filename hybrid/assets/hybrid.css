@@ -1,0 +1,9 @@
+/* Combined preview: page-level glue for the story pages */
+body.story{margin:0;background:#ece5d6}
+.tsg-a.chrome{display:contents}
+.tsg-e{display:block;min-height:60vh}
+.tsg-e .sec-mast{padding-top:22px}
+.tsg-e .sec-mast .mast-mid{padding:14px 0 10px}
+.tsg-e .sec-mast .nameplate .np{font-size:min(64px,calc((100vw - 40px) / 11.5));white-space:nowrap}
+.tsg-e .sec-mast .nameplate .the{font-size:min(28px,calc((100vw - 40px) / 26))}
+.tsg-e .sec-mast .nav{justify-content:center}

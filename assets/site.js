@@ -6,12 +6,16 @@
   document.documentElement.classList.add("js");
   const PAGE = document.body.dataset.page || "home";
   const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // The combined preview (hybrid/) loads this engine from one folder down. On its story pages this engine only draws
+  // the header, footer, age gate and photo viewer, and the Epitaph engine draws the page itself.
+  const BASE = window.__TSG_BASE || "";
+  const CHROME = !!window.__TSG_CHROME_ONLY;
 
   /* ---------- helpers ---------- */
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   // Only allow normal links: web, email, phone, same-site paths and in-page anchors. Anything else (javascript:, data:) becomes "#".
   const safeUrl = (u) => { const s = String(u == null ? "" : u).trim(); return /^(https?:\/\/|mailto:|tel:|#|\/(?!\/)|[\w.-]+\.html(#[\w-]*)?$|[\w-]+(\/[\w.-]+)*$)/i.test(s) && !/^\s*(javascript|data|vbscript):/i.test(s) ? s : "#"; };
-  const fix = (src) => { const s = String(src || "").replace(/^\//, ""); return /^(https:\/\/|images\/)/i.test(s) && !/["'<>]/.test(s) ? s : ""; };
+  const fix = (src) => { const s = String(src || "").replace(/^\//, ""); return /^(https:\/\/|images\/)/i.test(s) && !/["'<>]/.test(s) ? (/^images\//i.test(s) ? BASE + s : s) : ""; };
   const slug = (s) => String(s).toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-|-$/g, "");
   const CAM = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 7h3l2-3h6l2 3h3v13H4z"/><circle cx="12" cy="13" r="4"/></svg>';
   const slot = (label) => `<div class="slot" role="img" aria-label="${esc(label)}"></div>`;
@@ -28,7 +32,7 @@
   const $$ = (s, r = document) => [...r.querySelectorAll(s)];
 
   const FILES = ["settings", "home", "custom-shop", "services", "available", "firearms", "gear", "gallery", "videos", "about"];
-  Promise.all(FILES.map((f) => fetch("content/" + f + ".json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null)))
+  Promise.all(FILES.map((f) => fetch(BASE + "content/" + f + ".json", { cache: "no-cache" }).then((r) => r.json()).catch(() => null)))
     .then((res) => {
       const D = {};
       FILES.forEach((f, i) => (D[f.replace("-", "_")] = res[i]));
@@ -380,6 +384,7 @@ ${(A.before_after || []).map((b, i) => `<section class="sec ${i % 2 ? "white" : 
   </div></form><div class="done">Message received. We will reply within one business day.</div><div class="err">Something went wrong. Please call ${esc(S.phone)}.</div></div>
 </div></section>`;
 
+    if (CHROME) { wire(S); return; }
     $("#main").innerHTML = (P[PAGE] || P.home)();
 
     /* ---------- page wiring ---------- */
@@ -458,6 +463,9 @@ ${(A.before_after || []).map((b, i) => `<section class="sec ${i % 2 ? "white" : 
     top.onclick = () => scrollTo({ top: 0, behavior: reduce ? "auto" : "smooth" });
     $("#burger").onclick = () => { const o = $("#nav").classList.toggle("open"); $("#burger").setAttribute("aria-expanded", o); };
 
+    // Page features. On the combined story pages the Epitaph engine wires its own.
+    if (!CHROME) {
+
     // hero slider with progress bars
     const slides = $$(".slide");
     if (slides.length) {
@@ -526,6 +534,8 @@ ${(A.before_after || []).map((b, i) => `<section class="sec ${i % 2 ? "white" : 
         }
       });
     });
+
+    }
 
     // age gate
     const gate = $("#gate");

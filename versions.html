@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Two Designs | The Tombstone Gunsmith</title>
+<title>Design Options | The Tombstone Gunsmith</title>
 <meta name="robots" content="noindex">
 <link rel="icon" href="images/favicon.png">
 <style>
@@ -13,7 +13,7 @@ body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 system-ui,-app
 .wrap{max-width:1180px;margin:0 auto;padding:44px 24px 60px}
 h1{font-size:clamp(28px,4vw,42px);line-height:1.1;margin:0 0 10px;letter-spacing:-.01em}
 .intro{color:var(--mute);max-width:62ch;margin:0 0 34px;font-size:17px}
-.grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px}
 .card{background:var(--card);border:1px solid var(--rule);display:flex;flex-direction:column}
 .shot{display:block;aspect-ratio:1366/940;overflow:hidden;border-bottom:1px solid var(--rule);background:#ddd}
 .shot img{width:100%;height:100%;object-fit:cover;object-position:top;display:block;transition:transform .5s}
@@ -27,13 +27,14 @@ h2{margin:0;font-size:26px;line-height:1.15}
 .pages{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px;margin-top:auto;padding-top:14px;border-top:1px solid var(--rule)}
 .pages a{color:var(--acc)}
 .note{margin-top:30px;padding:18px 22px;border-left:3px solid var(--acc);background:#fff;color:#33312d;max-width:80ch}
-@media (max-width:820px){.grid{grid-template-columns:1fr}.wrap{padding:30px 16px 44px}}
+@media (max-width:1100px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media (max-width:760px){.grid{grid-template-columns:1fr}.wrap{padding:30px 16px 44px}}
 </style>
 </head>
 <body>
 <main class="wrap">
-  <h1>Two Designs for The Tombstone Gunsmith</h1>
-  <p class="intro">Both versions are full sites with every page built. Click into either one and look around. The tab at the bottom left of every page flips to the same page in the other design.</p>
+  <h1>Design Options for The Tombstone Gunsmith</h1>
+  <p class="intro">Each version is a full site with every page built. Click into any of them and look around. The tab at the bottom left of every page flips to the same page in the other versions.</p>
   <div class="grid">
     <section class="card">
       <a class="shot" href="index.html"><img src="assets/present/current.jpg" alt="Home page of the current design" width="1366" height="940"></a>
@@ -55,8 +56,18 @@ h2{margin:0;font-size:26px;line-height:1.15}
         <div class="pages"><a href="epitaph/custom-shop.html">Custom Shop</a><a href="epitaph/gunsmithing.html">Gunsmithing</a><a href="epitaph/firearms.html">Firearms</a><a href="epitaph/shop.html">Store</a><a href="epitaph/about.html">Our Story</a><a href="epitaph/contact.html">Contact</a></div>
       </div>
     </section>
+    <section class="card">
+      <a class="shot" href="hybrid/about.html"><img src="assets/present/combined.jpg" alt="Our Story page of the combined design" width="1366" height="940"></a>
+      <div class="body">
+        <span class="tag">Version C</span>
+        <h2>Combined</h2>
+        <p>The current design runs the store: the home page, the custom shop, firearms, gunsmithing and the online store. The story pages are set like a newspaper inside the site. Our Story, the photo archives and the videos run under their own masthead, The Allen Street Record, named for the original shop at 402 Allen Street. One header and footer tie it all together.</p>
+        <a class="open" href="hybrid/about.html">Open Version C</a>
+        <div class="pages"><a href="hybrid/index.html">Home</a><a href="hybrid/custom-shop.html">Custom Shop</a><a href="hybrid/about.html">Our Story</a><a href="hybrid/gallery.html">The Archives</a><a href="hybrid/videos.html">Videos</a></div>
+      </div>
+    </section>
   </div>
-  <p class="note">Both designs use the same words, photos and prices, and both plug into the same AmmoReady store. Prices are placeholders until the real ones come in. Whichever design gets picked is the one that goes live.</p>
+  <p class="note">All three use the same words, photos and prices, and all three plug into the same AmmoReady store. Prices are placeholders until the real ones come in. Whichever design gets picked is the one that goes live.</p>
 </main>
 </body>
 </html>

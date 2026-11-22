@@ -8,6 +8,9 @@
   document.documentElement.classList.add("js");
   const PAGE = document.body.dataset.page || "home";
   const KIT = !!window.__TSG_KIT;
+  // Combined preview (hybrid/): the current design's engine draws the header, footer, age gate and photo viewer,
+  // and this engine draws only the page, under a small section masthead.
+  const HYB = !!window.__TSG_HYBRID;
   const BASE = "../";
 
   /* ---------- helpers ---------- */
@@ -29,7 +32,7 @@
   // A printed photo. Product shots sit on red backdrops, so they print in ink (class "ink") and get color back on hover.
   const plate = (p, alt, cap, cls = "", ink = true, eager) => src(p) ? `<figure class="plate ${cls}">${img(p, alt, ink ? "ink" : "", eager)}${cap ? `<figcaption>${cutline(cap)}</figcaption>` : ""}</figure>` : "";
   const slotHTML = (label) => `<div class="slot" role="img" aria-label="${esc(label)}"><span>${esc(label)}</span></div>`;
-  document.addEventListener("error", (e) => { const i = e.target; if (!i || i.tagName !== "IMG" || i.closest(".vc")) return; const d = document.createElement("div"); d.innerHTML = slotHTML(i.alt || "Photo"); i.replaceWith(d.firstChild); }, true);
+  document.addEventListener("error", (e) => { const i = e.target; if (!i || i.tagName !== "IMG" || i.closest(".vc") || /tsg-empty\.jpg$/.test(i.src)) return; const d = document.createElement("div"); d.innerHTML = slotHTML(i.alt || "Photo"); i.replaceWith(d.firstChild); }, true);
   const note = (w, x) => `<div class="tsg-note" data-tsg-note>Below this block: add an AmmoReady <b>${w}</b> widget${x}. This note only shows while editing.</div>`;
   const sentences = (t) => String(t || "").match(/[^.!?]+[.!?]+/g) || [];
 
@@ -45,6 +48,19 @@
       D.gear = (D.gear || []).filter((g) => has(g.photo));
       D.gallery = (D.gallery || []).filter((g) => has(g.photo));
       D.videos = (D.videos || []).filter((v) => /(youtu\.be\/|v=|shorts\/|instagram|tiktok|facebook)/.test(v.link || ""));
+      // AmmoReady kit: every photo spot gets built even when it has no photo yet, so Anthony can add one later
+      // from the page's Photos box. The kit build turns this stand-in into an empty spot.
+      if (KIT) {
+        const fill = (o) => {
+          if (Array.isArray(o)) return o.forEach(fill);
+          if (!o || typeof o !== "object") return;
+          Object.keys(o).forEach((k) => {
+            if (typeof o[k] === "string" && !o[k].trim() && /(photo|^tile_)/.test(k) && k !== "video_band_photo") o[k] = "/images/uploads/tsg-empty.jpg";
+            else if (typeof o[k] === "object") fill(o[k]);
+          });
+        };
+        [D.home, D.custom_shop, D.services, D.about].forEach(fill);
+      }
       build(D);
     });
 
@@ -64,7 +80,7 @@
       ["gunsmithing", "Gunsmithing", "gunsmithing.html"], ["shop", "Store", "shop.html"], ["videos", "Videos", "videos.html"], ["about", "Our Story", "about.html"], ["contact", "Contact", "contact.html"]];
     const parent = { gear: "shop", gallery: "custom-shop", product: "available" }[PAGE] || PAGE;
     const front = PAGE === "home";
-    $("#hdr").outerHTML = `
+    if (!HYB) $("#hdr").outerHTML = `
 <a class="skip" href="#main">Skip to the page</a>
 <header class="mast${front ? "" : " compact"}">
   <div class="util"><div class="sheet util-in">
@@ -86,7 +102,7 @@
 
     /* ---------- footer, gate, photo viewer ---------- */
     const soc = [["Facebook", S.facebook], ["Instagram", S.instagram], ["YouTube", S.youtube], ["TikTok", S.tiktok]].filter(([, u]) => u && safeUrl(u) !== "#");
-    $("#ftr").outerHTML = `
+    if (!HYB) $("#ftr").outerHTML = `
 <footer class="foot"><div class="sheet">
   <div class="f-index">
     <div class="f-col"><p class="f-h">The Shop</p><a href="custom-shop.html">Custom Shop</a><a href="available.html">Available Now</a><a href="custom-shop.html#ios">IOS Optic System</a><a href="gallery.html">Project Gallery</a></div>
@@ -111,7 +127,7 @@
     const phead = (o) => `
 <section class="phead${o.photo && src(o.photo) ? " has-ph" : ""}">
   <div class="ph-text">
-    <p class="crumb"><a href="index.html">Front Page</a>${(o.crumbs || []).map((c) => ` <span aria-hidden="true">/</span> ${c}`).join("")}</p>
+    <p class="crumb"><a href="index.html">${HYB ? "Home" : "Front Page"}</a>${(o.crumbs || []).map((c) => ` <span aria-hidden="true">/</span> ${c}`).join("")}</p>
     <p class="kick">${esc(o.kick)}</p><h1>${esc(o.title)}</h1>${o.deck ? `<p class="deck">${esc(o.deck)}</p>` : ""}
     ${o.extra ? `<div class="cta-row">${o.extra}</div>` : ""}
   </div>
@@ -318,7 +334,7 @@ ${KIT ? `<section class="vsec" data-tsg-vsec><p class="kick">Builds and Reviews<
     P.gunsmithing = () => {
       const Sv = D.services || {}, items = Sv.items || [];
       const cats = [...new Set(items.map((i) => i.category))];
-      return `<div class="sheet">${phead({ kick: "Gunsmithing", title: "Flat Rate Shop Work", deck: "Flat rate pricing on common work. Everything else is hourly with an estimate before we start.", photo: Sv.banner_photo, alt: "Colt 1911 before shop work", crumbs: ["Gunsmithing"], extra: stamp("Schedule a Drop Off", "contact.html") })}
+      return `<div class="sheet">${phead({ kick: "Gunsmithing", title: "Flat Rate Shop Work", deck: "Flat rate pricing on common work. Everything else is hourly with an estimate before we start.", photo: Sv.banner_photo, alt: "Gunsmithing photo", crumbs: ["Gunsmithing"], extra: stamp("Schedule a Drop Off", "contact.html") })}
 <section class="band">
   <div class="rate"><p class="rate-n">${esc(S.hourly_rate)}<span>an hour</span></p><p>Shop rate for work outside the menu. One hour minimum on diagnostics. We call with an estimate before going further. Parts billed at retail.</p></div>
   <div class="band-h"><p class="kick">The Price List</p><h2>Posted Prices</h2></div>
@@ -399,7 +415,14 @@ ${(A.before_after || []).map((b) => `<section class="band ba-band">
       "Send Message", "Message received. We will reply within one business day.")}
 </section></div>`;
 
-    $("#main").innerHTML = (P[PAGE] || P.home)();
+    // The story section of the combined preview gets its own small masthead and section links
+    const SEC = [["about", "Our Story", "about.html"], ["gallery", "The Archives", "gallery.html"], ["videos", "Videos", "videos.html"]];
+    const section = () => `<section class="sec-mast"><div class="sheet">
+  <div class="mast-top"><span>The story pages of The Tombstone Gunsmith</span><span class="dateline"></span><span>Est. circa ${esc(S.roots_year || 1956)}</span></div>
+  <div class="mast-mid"><p class="nameplate"><span class="the">The</span> <span class="np">Allen Street Record</span></p></div>
+  <nav class="nav" aria-label="Story pages">${SEC.map(([id, t, h]) => `<a href="${h}"${id === PAGE ? ' aria-current="page"' : ""}>${t}</a>`).join("")}</nav>
+</div></section>`;
+    $("#main").innerHTML = (HYB ? section() : "") + (P[PAGE] || P.home)();
 
     /* ---------- page wiring ---------- */
     const tabs = (id, items, key, render) => {
@@ -508,7 +531,7 @@ ${(A.before_after || []).map((b) => `<section class="band ba-band">
     // age gate, same storage key as the current site so a visitor only answers once
     const gate = $("#gate");
     let ok = false; try { ok = localStorage.getItem("tsg21") === "1"; } catch (e) {}
-    if (!ok && !window.__TSG_KIT) {
+    if (!ok && !window.__TSG_KIT && !HYB) {
       gate.hidden = false; document.body.classList.add("gated");
       const yes = $("#gate-yes"), no = $("#gate-no");
       yes.focus();
