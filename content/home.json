@@ -8,7 +8,7 @@
       "text": "One pistol, one gunsmith, start to finish. Built to your spec and test fired before it ships.",
       "button": "Start a Build",
       "link": "custom-shop.html",
-      "photo": ""
+      "photo": "/images/uploads/republic-of-texas-1911.jpg"
     },
     {
       "kicker": "Tombstone, Arizona. Circa 1956",
@@ -38,7 +38,7 @@
       "photo": ""
     }
   ],
-  "tile_custom": "",
+  "tile_custom": "/images/uploads/colt-commander-9mm-stag.jpg",
   "tile_nighthawk": "/images/uploads/nighthawk-korth-44-right.jpg",
   "tile_korth": "/images/uploads/korth-left.jpg",
   "tile_gunsmithing": "",

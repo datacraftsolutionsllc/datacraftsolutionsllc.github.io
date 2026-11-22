@@ -1,5 +1,5 @@
 {
-  "banner_photo": "",
+  "banner_photo": "/images/uploads/republic-of-texas-1911.jpg",
   "platforms": [
     {
       "name": "Custom 1911",
@@ -8,7 +8,7 @@
       "capacity": "7 to 10 rounds",
       "best_for": "Carry, collecting, heirloom builds",
       "starting_price": "$3,500",
-      "photo": ""
+      "photo": "/images/uploads/colt-commander-9mm-stag.jpg"
     },
     {
       "name": "Custom 2011",
@@ -17,7 +17,7 @@
       "capacity": "17 to 21 rounds",
       "best_for": "Competition, duty, high capacity carry",
       "starting_price": "$4,500",
-      "photo": ""
+      "photo": "/images/uploads/staccato-c2-tombstone-grip.jpg"
     }
   ],
   "options": [

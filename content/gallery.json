@@ -1,5 +1,40 @@
 [
   {
+    "type": "1911",
+    "name": "The Republic of Texas",
+    "notes": "Engraved slide, stag grips, 1 of 1836",
+    "photo": "/images/uploads/republic-of-texas-1911.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "1911",
+    "name": "Colt Commander",
+    "notes": "9mm, color case frame, stag grips",
+    "photo": "/images/uploads/colt-commander-9mm-stag.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "1911",
+    "name": "The First Tombstone 1911",
+    "notes": "My first 1911 build",
+    "photo": "/images/uploads/first-tombstone-1911.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "2011",
+    "name": "Staccato C2",
+    "notes": "Tombstone grip, Holosun optic",
+    "photo": "/images/uploads/staccato-c2-tombstone-grip.jpg",
+    "shape": "square"
+  },
+  {
+    "type": "2011",
+    "name": "Staccato Pair",
+    "notes": "Silver frames, black slides",
+    "photo": "/images/uploads/staccato-pair.jpg",
+    "shape": "tall"
+  },
+  {
     "type": "Revolver",
     "name": "Nighthawk Korth .44 Mag",
     "notes": "Ported barrel, walnut grips",
