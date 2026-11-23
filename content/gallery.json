@@ -1,6 +1,90 @@
 [
   {
     "type": "1911",
+    "name": "Color Case Double Star",
+    "notes": "Gold trigger, wood grips, on the Tombstone stand",
+    "photo": "/images/uploads/color-case-double-star-stand.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "1911",
+    "name": "Color Case Double Star",
+    "notes": "Checkered wood grips, gold trigger",
+    "photo": "/images/uploads/color-case-double-star-checkered.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "1911",
+    "name": "Desert Camo 1911",
+    "notes": "Camo finish, matching grips",
+    "photo": "/images/uploads/desert-camo-1911.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "2011",
+    "name": "Staccato 2011",
+    "notes": "Tombstone grip, Holosun optic",
+    "photo": "/images/uploads/staccato-2011-tombstone-grip.jpg",
+    "shape": "square"
+  },
+  {
+    "type": "2011",
+    "name": "TGS002",
+    "notes": "Stainless double stack, Tombstone grip",
+    "photo": "/images/uploads/tgs002-double-stack.jpg",
+    "shape": "square"
+  },
+  {
+    "type": "2011",
+    "name": "Tombstone Double Stack",
+    "notes": "Stainless, Tombstone grip, left side",
+    "photo": "/images/uploads/tombstone-double-stack-left.jpg",
+    "shape": "square"
+  },
+  {
+    "type": "2011",
+    "name": "A Pair of Tombstones",
+    "notes": "Stainless, two grip textures",
+    "photo": "/images/uploads/tgs-double-stack-pair.jpg",
+    "shape": "tall"
+  },
+  {
+    "type": "1911",
+    "name": "Two State 1911",
+    "notes": "New Mexico quarter set in the grip",
+    "photo": "/images/uploads/two-state-1911-new-mexico.jpg",
+    "shape": "tall"
+  },
+  {
+    "type": "1911",
+    "name": "Two State 1911",
+    "notes": "Texas on the other side",
+    "photo": "/images/uploads/two-state-1911-texas.jpg",
+    "shape": "tall"
+  },
+  {
+    "type": "1911",
+    "name": "Presentation 1911",
+    "notes": "Display case, medallion grips",
+    "photo": "/images/uploads/presentation-1911-case.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "1911",
+    "name": "Color Case Frame",
+    "notes": "Frame in the box",
+    "photo": "/images/uploads/color-case-frame.jpg",
+    "shape": "wide"
+  },
+  {
+    "type": "1911",
+    "name": "On the Bench",
+    "notes": "A 1911 torn down for work",
+    "photo": "/images/uploads/bench-1911-teardown.jpg",
+    "shape": "tall"
+  },
+  {
+    "type": "1911",
     "name": "The Republic of Texas",
     "notes": "Engraved slide, stag grips, 1 of 1836",
     "photo": "/images/uploads/republic-of-texas-1911.jpg",
