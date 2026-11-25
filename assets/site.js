@@ -388,6 +388,15 @@ ${(A.before_after || []).map((b, i) => `<section class="sec ${i % 2 ? "white" : 
     $("#main").innerHTML = (P[PAGE] || P.home)();
 
     /* ---------- page wiring ---------- */
+    if (PAGE === "custom-shop" && location.hash === "#quote") {
+      // carry a build over from the 3D builder into the quote form
+      let b = "";
+      try { b = sessionStorage.getItem("tsgBuild") || ""; } catch (e) { b = ""; }
+      const ta = $('#quote textarea[name="details"]');
+      if (b && ta && !ta.value) ta.value = b.slice(0, 1500);
+      const pf = $('#quote select[name="platform"]');
+      if (b && pf) [...pf.options].forEach((o) => { if (/1911/.test(o.textContent) && !/2011/.test(o.textContent)) pf.value = o.value; });
+    }
     if (PAGE === "gunsmithing") tabs("svtabs", (D.services || {}).items || [], "category", (l) => $("#svbody").innerHTML = l.map((s) => `<tr><td><b>${esc(s.name)}</b><small>${esc(s.details)}</small></td><td>${esc(s.platform)}</td><td>${esc(s.turnaround)}</td><td class="r"><b class="price">${esc(s.price)}</b></td></tr>`).join(""));
     if (PAGE === "firearms") tabs("fatabs", D.firearms || [], "brand", (l) => $("#fagrid").innerHTML = l.map((f, i) => card({ ...f, detail: f.details, href: "tel:" + S.phone, cta: "Call " + S.phone }, i)).join(""), true);
     if (PAGE === "videos") tabs("vtabs", D.videos || [], "category", (l) => { $("#vgrid").innerHTML = l.map(vcard).join(""); });
